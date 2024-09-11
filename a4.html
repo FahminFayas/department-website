@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Department Admission</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #003d66;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar h1 {
+            font-size: 1.8rem;
+        }
+
+        .navbar nav {
+            display: flex;
+        }
+
+        .navbar nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav a:hover {
+            color: #00bcd4;
+        }
+
+        .intro {
+            background: #00bcd4;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .intro .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .admission-form {
+            padding: 40px 20px;
+        }
+
+        .admission-form .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .admission-form h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #003d66;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #00bcd4;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #003d66;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #002b4d;
+        }
+
+        footer {
+            background: #003d66;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>BCA Department</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Programs</a>
+                <a href="#">Admissions</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Apply for BCA Program</h2>
+            <p>Welcome to the BCA Department! We're excited to help you start your journey in the world of computer applications. Fill out the form below to submit your application.</p>
+        </div>
+    </section>
+
+    <section class="admission-form">
+        <div class="container">
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherJob">Father's Job:</label>
+                    <input type="text" id="fatherJob" name="fatherJob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motherJob">Mother's Job:</label>
+                    <input type="text" id="motherJob" name="motherJob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program of Interest:</label>
+                    <select id="program" name="program" required>
+                        <option value="bca">Bachelor of Computer Applications (BCA)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BCA Department. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
