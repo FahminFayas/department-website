@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body style="font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #f9f9f9; margin: 0; padding: 0; box-sizing: border-box;">
+    <header style="background-color: #9e2e5d; color: #ffffff; padding: 20px 0; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h1 style="margin: 0; font-size: 2.5em;">Contact Us</h1>
+    </header>
+    <main style="padding: 40px; display: flex; justify-content: center; align-items: center; min-height: calc(100vh - 140px);">
+        <section class="contact-form" style="background: #ffffff; padding: 30px; border-radius: 8px; max-width: 600px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h2 style="margin-bottom: 20px; color: #333; font-size: 1.8em; text-align: center;">We'd Love to Hear From You!</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="name" style="display: block; font-weight: bold; margin-bottom: 8px; color: #555;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1em;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; font-weight: bold; margin-bottom: 8px; color: #555;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1em;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="subject" style="display: block; font-weight: bold; margin-bottom: 8px; color: #555;">Subject:</label>
+                    <input type="text" id="subject" name="subject" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1em;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="message" style="display: block; font-weight: bold; margin-bottom: 8px; color: #555;">Message:</label>
+                    <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1em; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" style="background-color: #0044cc; color: #ffffff; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-size: 1em; transition: background-color 0.3s;">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer style="background-color: #333; color: #ffffff; text-align: center; padding: 20px 0; position: relative; width: 100%; bottom: 0; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);">
+        <p style="margin: 0;">&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+    <script>
+        // Optional JavaScript for form enhancements
+        document.querySelector('button').addEventListener('mouseover', () => {
+            document.querySelector('button').style.backgroundColor = '#0033aa';
+        });
+        document.querySelector('button').addEventListener('mouseout', () => {
+            document.querySelector('button').style.backgroundColor = '#0044cc';
+        });
+    </script>
+</body>
+</html>
