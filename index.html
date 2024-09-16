@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCA Department</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background: linear-gradient(to right, #00aaff, #00ff99);
-            padding: 1em;
+            /* background: linear-gradient(to right, #00aaff, #00ff99); */
+            /* padding: 1em; */
             color: white;
             text-align: center;
         }
+
+        .logo{
+            text-align: left;
+            font-weight: bold;
+        }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
         }
+
         .hero {
             background: linear-gradient(to bottom, #0033cc, #66ffcc);
             color: white;
             text-align: center;
             padding: 5em 1em;
         }
+
         .section {
             padding: 2em 1em;
             text-align: center;
         }
-        .about { background: linear-gradient(to right, #f2f2f2, #ffffff); }
-        .programs { background: linear-gradient(to right, #d1a5e0, #f78eec); }
-        .research { background: linear-gradient(to right, #a2d9a6, #f2f485); }
-        .student-life { background: linear-gradient(to right, #ff6f6f, #ffb03b); }
-        .events { background: linear-gradient(to right, #4a2c77, #b264b0); }
+
+        .about {
+            background: linear-gradient(to right, #f2f2f2, #ffffff);
+        }
+
+        .programs {
+            background: linear-gradient(to right, #d1a5e0, #f78eec);
+        }
+
+        .research {
+            background: linear-gradient(to right, #a2d9a6, #f2f485);
+        }
+
+        .student-life {
+            background: linear-gradient(to right, #ff6f6f, #ffb03b);
+        }
+
+        .events {
+            background: linear-gradient(to right, #4a2c77, #b264b0);
+        }
+
         footer {
             background: linear-gradient(to right, #002b5e, #000000);
             color: white;
             text-align: center;
             padding: 1em;
         }
+
         .button {
             display: inline-block;
             padding: 0.5em 1em;
@@ -51,20 +83,33 @@
             border-radius: 5px;
         }
     </style>
+
+
 </head>
+
 <body>
     <header>
-        <div class="logo">BCA Department</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="programs.html">Programs</a>
-            <a href="faculty.html">Faculty</a>
-            <a href="a4.html">Admissions</a>
-            <a href="student-life.html">Student Life</a>
-            <a href="RESEARCH.HTML">Research & Projects</a>
-            <a href="event.html">Events</a>
-            <a href="contact.html">Contact Us</a>
+        <!-- <div class="logo">BCA Department</div> -->
+        <nav class="navbar navbar-expand-lg py-3 d-flex flex-wrap justify-content-center bg-info-subtle">
+            <a href="index.html" class="navbar-brand logo">Department of <br> Computer Science</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="true">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="programs.html" class="nav-link">Programmes</a></li>
+                    <li class="nav-item"><a href="faculty.html" class="nav-link">Faculties</a></li>
+                    <li class="nav-item"><a href="a4.html" class="nav-link">Admissions</a></li>
+                    <li class="nav-item"><a href="student-life.html" class="nav-link">Student Life</a></li>
+                    <li class="nav-item"><a href="RESEARCH.HTML" class="nav-link">Research & Projects</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+
+            </div>
         </nav>
     </header>
 
@@ -123,5 +168,12 @@
             <a href="contact.html">Contact Us</a>
         </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
